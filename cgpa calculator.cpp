@@ -13,7 +13,7 @@ int main(){
 	cin>>no_of_courses;
 	Course student[no_of_courses];
 	for(int i=0;i<no_of_courses;i++){
-		cout<<"Enter the grade of course "<<i+1;
+		cout<<"Enter the grade of course: "<<i+1;
 		cin>>student[i].grade;
 		char j=student[i].grade;
 		if(!(j=='O'||j=='A'||j=='B'||j=='C'||j=='D'||j=='E'||j=='F')){
@@ -22,7 +22,7 @@ int main(){
 			continue;
 			
 		}
-		cout<<"Enter the credit hours of course "<<i+1;
+		cout<<"Enter the credit hours of course: "<<i+1;
 		cin>>student[i].credit_hours;
 		if (student[i].credit_hours<=0){
 			i--;
